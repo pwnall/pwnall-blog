@@ -92,7 +92,7 @@ that is to add the lines below to `~/.bash_profile` (on OS X) or to `~/.bashrc`
 ```bash
 export GYP_GENERATORS=ninja
 export PATH=$PATH:$HOME/depot_tools
-export CHROME_DEVEL_SANDBOX=$HOME/chromium/src/out/Release/chrome_sandbox
+export CHROME_DEVEL_SANDBOX=$HOME/chromium/src/out/Debug/chrome_sandbox
 ```
 
 On OS X, the easiest way of editing the file I mentioned is to run the commands
@@ -170,7 +170,7 @@ Run the commands below in *Terminal* to build Chromium.
 cd ~/chromium
 gclient run-hooks --force
 cd src
-ninja -C out/Release chrome
+ninja -C out/Debug chrome
 ```
 
 ## Dealing with Build Errors
@@ -204,9 +204,9 @@ running.
 
 ```bash
 cd ~/chromium/src
-ninja -C out/Release chrome_sandbox
-sudo chown root:root out/Release/chrome_sandbox
-sudo chmod 4755 out/Release/chrome_sandbox
+ninja -C out/Debug chrome_sandbox
+sudo chown root:root out/Debug/chrome_sandbox
+sudo chmod 4755 out/Debug/chrome_sandbox
 ```
 
 
@@ -220,14 +220,14 @@ On OS X, run the commands below.
 
 ```bash
 cd ~/chromium/src
-out/Release/Chromium.app/Contents/MacOS/Chromium
+out/Debug/Chromium.app/Contents/MacOS/Chromium
 ```
 
 On Linux, use these commands instead.
 
 ```bash
 cd ~/chromium/src
-out/Release/chromium
+out/Debug/chrome
 ```
 
 Congratulations! You are now ready to change the world!
