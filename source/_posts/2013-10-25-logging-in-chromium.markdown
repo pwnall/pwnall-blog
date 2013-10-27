@@ -3,7 +3,7 @@ layout: post
 title: "Logging in Chromium"
 date: 2013-10-25 04:39
 comments: true
-categories:
+categories: chromium
 ---
 
 To me, *logging* is a fancy way of saying `printf`-debugging. In a large

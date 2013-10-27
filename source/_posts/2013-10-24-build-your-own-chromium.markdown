@@ -3,7 +3,7 @@ layout: post
 title: "Build Your Own Chromium"
 date: 2013-10-24 01:04
 comments: true
-categories:
+categories: chromium
 ---
 
 I initially planned to start this series with some introductory material, such
