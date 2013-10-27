@@ -3,7 +3,7 @@ layout: post
 title: "Resource Loading in Blink"
 date: 2013-10-31 14:25
 comments: true
-draft: true
+published: false
 categories: chromium
 ---
 
