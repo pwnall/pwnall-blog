@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Resource Loading in Blink"
-date: 2013-10-29 14:25
+date: 2013-10-31 14:25
 comments: true
 draft: true
 categories: chromium
