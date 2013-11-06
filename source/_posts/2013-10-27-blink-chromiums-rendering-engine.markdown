@@ -3,7 +3,7 @@ layout: post
 title: "Blink: Chromium's Rendering Engine"
 date: 2013-10-27 07:50
 comments: true
-categories:  chromium
+categories: chromium, blink
 ---
 
 [Blink](http://www.chromium.org/blink) is Google's fork of the
@@ -93,6 +93,9 @@ Blink's implementation is split into the following top-level directories.
   [`public/web`](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/public/web/)
 * [`Source/core`](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/)
   has the WebCore implementation, and is the meat of the project
+* [`Source/wtf`](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/wtf/)
+  defines primitive types that abstract over differences in the C++ compilers
+  and standard libraries that Blink supports
 * [`Source/platform`](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/platform/)
   contains some lower-level code used by WebCore
 * [`Source/modules`](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/modules/)
