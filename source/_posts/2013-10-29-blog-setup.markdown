@@ -26,26 +26,44 @@ git checkout master
 git rebase 2.5
 ```
 
+I followed the official guides for
+[Initial Setup](http://octopress.org/docs/setup/),
+[Configuration](http://octopress.org/docs/configuring/), and
+[Blogging](http://octopress.org/docs/blogging/). Although they are written for
+Octopress 2.0, they still apply to 2.5.
+
 
 # Heroku
 
 The blog is deployed on the [Heroku platform](https://www.heroku.com/), and
 using their generous free tier. I use one dyno and no plugins.
 
-I followed the official guides for
-[Initial Setup](http://octopress.org/docs/setup/),
-[Configuration](http://octopress.org/docs/configuring/), and
-[Blogging](http://octopress.org/docs/blogging/). I did not follow the Heroku
-deployment guide, because I did not agree with the approach of checking in the
-generated static pages.
+I did not follow the Octopress deployment guide for Heroku, because I did not
+agree with the approach of checking in the generated static pages.
 
-Instead, I used
-[jgarber's Octopress buildpack](https://github.com/jgarber/heroku-buildpack-ruby-octopress),
-which generates the static pages when I push to Heroku.
-I followed the buildpack's
-[official setup guide](http://jasongarber.com/blog/2012/01/10/deploying-octopress-to-heroku-with-a-custom-buildpack/),
+Instead, I used an
+[Octopress buildpack](https://github.com/pwnall/heroku-buildpack-ruby),
+which generates the static pages when I push to Heroku's git repository.
+
+This build pack is basically
+[Heroku's official Ruby buildpack](https://github.com/heroku/heroku-buildpack-ruby),
+with the Octopress logic borrowed from
+[jgarber's Octopress buildpack](https://github.com/jgarber/heroku-buildpack-ruby-octopress).
+I'm betting that Heroku will update their buildpack much more frequently than
+I'll have to update the Octopress bits, so I'm using a rebasing workflow for
+the buildpack.
+
+I followed
+[jgarber's setup guide for the Octopress buildpack](http://jasongarber.com/blog/2012/01/10/deploying-octopress-to-heroku-with-a-custom-buildpack/),
 with the exception of the Pygments setup, which is
 [no longer required](http://jasongarber.com/blog/2012/01/10/deploying-octopress-to-heroku-with-a-custom-buildpack/#comment-750353224)
+
+Also, since I'm using my own buildpack, the command for setting it up is
+different from the command in the guide I followed.
+
+```bash
+heroku config:set BUILDPACK_URL=https://github.com/pwnall/heroku-buildpack-ruby.git#octopress
+```
 
 
 # Discussion

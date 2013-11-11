@@ -95,7 +95,8 @@ Blink's implementation is split into the following top-level directories.
   has the WebCore implementation, and is the meat of the project
 * [`Source/wtf`](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/wtf/)
   defines primitive types that abstract over differences in the C++ compilers
-  and standard libraries that Blink supports
+  and standard libraries that Blink supports; wtf stands for Web Template
+  Framework
 * [`Source/platform`](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/platform/)
   contains some lower-level code used by WebCore
 * [`Source/modules`](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/modules/)
@@ -173,3 +174,4 @@ time spent reading them.
 * [Blink Public C++ API](http://www.chromium.org/blink/public-c-api)
 * [The Chromium Content Module](http://www.chromium.org/developers/content-module)
 * [Getting around the Chrome Source Code](http://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code)
+* [SourceDirectory in the WebKit Wiki](http://trac.webkit.org/wiki/SourceDirectory)

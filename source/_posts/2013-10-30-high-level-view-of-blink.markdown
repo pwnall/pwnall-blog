@@ -4,7 +4,7 @@ title: "High-Level View of Blink"
 date: 2013-10-30 06:53
 comments: true
 published: false
-categories:  chromium
+categories: chromium
 ---
 
 
