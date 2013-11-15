@@ -144,7 +144,7 @@ and the corresponding
 The `all_webkit` target contains the Blink-related deliverables.
 
 ```bash
-ninja -C out/Debug all_webkit
+ninja -C out/Debug blink_tests
 ```
 
 Blink cannot run on its own, due to its dependency on Chromium's content layer.
