@@ -175,3 +175,4 @@ time spent reading them.
 * [The Chromium Content Module](http://www.chromium.org/developers/content-module)
 * [Getting around the Chrome Source Code](http://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code)
 * [SourceDirectory in the WebKit Wiki](http://trac.webkit.org/wiki/SourceDirectory)
+* [WebKit for Developers](http://www.paulirish.com/2013/webkit-for-developers/)
