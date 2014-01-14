@@ -124,7 +124,7 @@ Run the commands below in *Terminal*.
 cd ~
 mkdir chromium
 cd chromium
-fetch chromium --nosvn=True
+fetch --nohooks chromium --nosvn=True
 ```
 
 
@@ -168,7 +168,7 @@ Run the commands below in *Terminal* to build Chromium.
 
 ```bash
 cd ~/chromium
-gclient run-hooks --force
+gclient runhooks --force
 cd src
 ninja -C out/Debug chrome
 ```
