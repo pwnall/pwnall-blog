@@ -3,7 +3,7 @@ layout: post
 title: "Blink's Public Interface"
 date: 2014-07-07 02:10
 comments: true
-categories:
+categories: chromium, blink
 ---
 
 Blink is cleanly separated from Chromium's content layer. This article gives a
@@ -84,3 +84,7 @@ Blink code obtains a reference to the current platform by calling the
 `blink::Platform::current()` static function, and then calls a `Platform`
 virtual method. Many methods are used to obtain instances of platform classes.
 
+
+# References
+
+* [Blink Public C++ API](http://www.chromium.org/blink/public-c-api)
