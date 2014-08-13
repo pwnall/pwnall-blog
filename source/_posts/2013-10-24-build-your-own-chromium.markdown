@@ -124,7 +124,7 @@ Run the commands below in *Terminal*.
 cd ~
 mkdir chromium
 cd chromium
-fetch --nohooks chromium --nosvn=True
+fetch --nohooks --no-history chromium --nosvn=True
 ```
 
 
