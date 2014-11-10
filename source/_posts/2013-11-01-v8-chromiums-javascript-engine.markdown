@@ -4,7 +4,7 @@ title: "V8: Chromium's JavaScript Engine"
 date: 2013-11-01 18:31
 comments: true
 published: false
-categories: chromium, v8
+categories: chromium v8
 ---
 
 This post is an overview of

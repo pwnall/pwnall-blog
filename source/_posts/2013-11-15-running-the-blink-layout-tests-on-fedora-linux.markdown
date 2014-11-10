@@ -3,7 +3,7 @@ layout: post
 title: "Running the Blink Layout Tests on Fedora Linux"
 date: 2013-11-15 11:02
 comments: true
-categories: chromium, blink, fedora
+categories: chromium blink fedora
 ---
 
 I use Fedora instead of the recommended Ubuntu distribution. My main motivation

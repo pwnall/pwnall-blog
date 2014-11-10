@@ -3,7 +3,7 @@ layout: post
 title: "Blink's Public Interface"
 date: 2014-07-07 02:10
 comments: true
-categories: chromium, blink
+categories: chromium blink
 ---
 
 Blink is cleanly separated from Chromium's content layer. This article gives a

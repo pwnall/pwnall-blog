@@ -3,8 +3,8 @@
 # ----------------------- #
 
 url: http://pwnall.heroku.com
-title: "If one wants to truly pwn, one must pwn at all layers of the stack"
-subtitle: The best way to predict the future is to create it
+title: "Hacking on Blink and Chromium"
+subtitle: This blog documents my attempts to use and improve the Web platform
 author: Victor Costan (龍望)
 simple_search: http://google.com/search
 description:

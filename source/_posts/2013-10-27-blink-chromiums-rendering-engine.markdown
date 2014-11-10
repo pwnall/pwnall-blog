@@ -3,7 +3,7 @@ layout: post
 title: "Blink: Chromium's Rendering Engine"
 date: 2013-10-27 07:50
 comments: true
-categories: chromium, blink
+categories: chromium blink
 ---
 
 [Blink](http://www.chromium.org/blink) is Google's fork of the

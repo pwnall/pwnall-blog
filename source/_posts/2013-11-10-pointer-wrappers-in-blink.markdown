@@ -3,7 +3,7 @@ layout: post
 title: "Smart pointer types in Blink"
 date: 2013-11-10 01:47
 comments: true
-categories: chromium, blink
+categories: chromium blink
 published: false
 ---
 
