@@ -525,7 +525,7 @@ to the code for the `<iframe>`-based approach presented above.
   // Issues an XHR get and passes the response String to the callback function.
   var getUrl = function(url, callback) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', absoluteUrl, false);
+    xhr.open('GET', absoluteUrl, true);
     xhr.onreadystatechange = function() {
       if (xhr.readyState !== 4)
         return;
@@ -710,7 +710,7 @@ the bootstrap page.
   // Issues an XHR get and passes the response String to the callback function.
   var getUrl = function(url, callback) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', absoluteUrl, false);
+    xhr.open('GET', absoluteUrl, true);
     xhr.onreadystatechange = function() {
       if (xhr.readyState !== 4)
         return;
